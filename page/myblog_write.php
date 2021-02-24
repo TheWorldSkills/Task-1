@@ -5,9 +5,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Todo Blog</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,103 +38,91 @@
                     	<h1><img src="images/logo.png" alt="logo"></h1>
                     </a>
                 </div>
-                <div class="pull-right">
-                    <ul class="navi">
-                        <li>
-                            <a href="login.html" title="로그인">
-                                로그인
-                            </a>
-                        </li>
-                        <li>
-                            <a href="join.html" title="회원가입">
-                                회원가입
-                            </a>
-                        </li>
-                        <li>
-                            <a href="myblog.html" title="내 블로그">
-                                내 블로그
-                            </a>
-                        </li>
-                        <li>
-                            <a href="preferences.html" title="블로그관리">
-                                블로그관리
-                            </a>
-                        </li>
-                    </ul>
-                </div>
            </div> 
         </div>
       
     </header>
     
     <!-- visual -->
-    <section id="home-slider">
-        <div class="container">
-            <div class="row">
-                <div class="main-slider">
-                    <div class="slide-text">
-                        <h1>We Are Creative <br>Web Programers.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-                        <a href="#" class="btn btn-common">SIGN UP</a>
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">
+                                <a href="myblog.html">닉네임의 블로그</a>
+                            </h1>
+                            <p><small>Todo Blog of 아이디 </small></p>
+                        </div>
                     </div>
-                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
                 </div>
             </div>
         </div>
-    </section>
+   </section>
     
     <!-- contents -->
     <section id="contents">
         <div class="container">
             <div class="row">
                 <div class="main-content">
-                    <h1 class="antitle">회원가입</h1>
 
                     <!-- content inner -->
-                    <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
-                        <form class="signup-page">
-                            <div class="signup-header">
-                                <h2>Register a new account</h2>
-                            <label>아이디
-                                <span class="color-red">*</span>
-                            </label>
-                            <input class="form-control margin-bottom-20" type="text">
-                            <label>비밀번호
-                                <span class="color-red">*</span>
-                            </label>
-                            <input class="form-control margin-bottom-20" type="text">
+                    <section id="projects">
+                        <div class="container">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <label>이름
-                                        <span class="color-red">*</span>
-                                    </label>
-                                    <input class="form-control margin-bottom-20" type="password">
+                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                    <div class="sidebar portfolio-sidebar">
+                                        <div class="sidebar-item categories">
+                                            <h3>블로그 메뉴</h3>
+                                            <ul class="nav navbar-stacked">
+                                                <li class="active"><a href="#">PHP<span class="pull-right">(3)</span></a></li>
+                                                <li><a href="#">JavaScript<span class="pull-right">(8)</span></a></li>
+                                                <li><a href="#">JSP<span class="pull-right">(4)</span></a></li>
+                                                <li><a href="#">node.js<span class="pull-right">(9)</span></a></li>
+                                                <li><a href="#">CSS<span class="pull-right">(3)</span></a></li>
+                                                <li><a href="#">HTML5<span class="pull-right">(4)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label>닉네임
-                                        <span class="color-red">*</span>
-                                    </label>
-                                    <input class="form-control margin-bottom-20" type="password">
+                                <div class="col-md-9 col-sm-9 col-xs-9">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1>글쓰기</h1>
+                                            <form class="boardwrite">
+                                                <label>제목
+                                                    <span class="color-red">*</span>
+                                                </label>
+                                                <input class="form-control margin-bottom-20" type="text">
+                                                <label>작성자
+                                                    <span class="color-red">*</span>
+                                                </label>
+                                                <input class="form-control margin-bottom-20" type="text">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <label>내용
+                                                            <span class="color-red">*</span>
+                                                        </label>
+                                                        <textarea class="form-control margin-bottom-20"></textarea>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-lg-12 text-right">
+                                                        <button class="btn btn-primary btn-sm" type="submit">글작성</button>
+                                                        <button class="btn btn-default btn-sm" type="reset">다시작성하기</button>
+                                                        <button class="btn btn-default btn-sm" type="button" onclick="history.back();">취소</button>
+                                                    </div>
+                                                </div>
+                                            </form> 
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <p>Already a member? <br> Click 
-                                        <a href="login.html">HERE</a>to login to your account.</p>
-                                </div>
-                                <div class="col-lg-4 text-right">
-                                    <button class="btn btn-primary" type="submit">회원가입</button>
-                                </div>
-                            </div>
-                        </form>  
-                    </div>
+                        </div>
+                    </section>
                     <!-- content inner -->
 
                 </div>

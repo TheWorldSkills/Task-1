@@ -5,9 +5,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Todo Blog</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -89,7 +89,7 @@
                                 <div class="col-md-9 col-sm-9 col-xs-9">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h1>글쓰기</h1>
+                                            <h1>글수정</h1>
                                             <form class="boardwrite">
                                                 <label>제목
                                                     <span class="color-red">*</span>
@@ -110,7 +110,7 @@
                                                 <hr>
                                                 <div class="row">
                                                     <div class="col-lg-12 text-right">
-                                                        <button class="btn btn-primary btn-sm" type="submit">글작성</button>
+                                                        <button class="btn btn-primary btn-sm" type="submit">글수정</button>
                                                         <button class="btn btn-default btn-sm" type="reset">다시작성하기</button>
                                                         <button class="btn btn-default btn-sm" type="button" onclick="history.back();">취소</button>
                                                     </div>

@@ -5,9 +5,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Todo Blog</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>

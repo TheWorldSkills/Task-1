@@ -5,9 +5,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Todo Blog</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -89,67 +89,71 @@
                                 <div class="col-md-9 col-sm-9 col-xs-9">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h1>PHP</h1>
-                                            <div class="boardlist">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="col-md-1">번호</th>
-                                                            <th class="col-md-6">제목</th>
-                                                            <th>작성자</th>
-                                                            <th>작성일</th>
-                                                            <th>조회</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <a href="myblog_view.html">게시물 리스트</a>
-                                                            </td>
-                                                            <td>관리자</td>
-                                                            <td>2019-04-06</td>
-                                                            <td>6</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>
-                                                                &nbsp;&nbsp;<a href="myblog_view.html">└ 게시물 리스트</a>
-                                                            </td>
-                                                            <td>관리자</td>
-                                                            <td>2019-04-06</td>
-                                                            <td>8</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>
-                                                                <a href="myblog_view.html">게시물 리스트</a>
-                                                            </td>
-                                                            <td>관리자</td>
-                                                            <td>2019-04-06</td>
-                                                            <td>12</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <div class="pull-right">
-                                                    <button class="btn btn-default btn-sm" type="button" onclick="window.location='myblog_write.html'">글쓰기</button>
-                                                </div>
+                                            <h1>글보기</h1>
+                                            <div class="subject">
+                                                <small>[제목]</small> 글제목
                                             </div>
-                                            <div class="portfolio-pagination">
-                                                <ul class="pagination">
-                                                  <li><a href="#">left</a></li>
-                                                  <li class="active"><a href="#">1</a></li>
-                                                  <li><a href="#">2</a></li>
-                                                  <li><a href="#">3</a></li>
-                                                  <li><a href="#">4</a></li>
-                                                  <li><a href="#">5</a></li>
-                                                  <li><a href="#">6</a></li>
-                                                  <li><a href="#">7</a></li>
-                                                  <li><a href="#">8</a></li>
-                                                  <li><a href="#">9</a></li>
-                                                  <li><a href="#">right</a></li>
+                                            <div class="post-bottom overflow">
+                                                
+                                                <ul class="nav navbar-nav post-nav">
+                                                    <li><i class="fa fa-tag"></i> 작성자 : 관리자 [Master]</li>
+                                                    <li><i class="fa fa-clock-o "></i> 작성일 : 2014. 04. 06</li>
+                                                    <li><i class="fa fa-comments"></i> 조회 : 24</li>
                                                 </ul>
                                             </div>
+                                            <div class="viwebox">
+                                                게시물 내용
+                                            </div>
+                                            <hr>
+                                            <div class="pull-right">
+                                                <button class="btn btn-default btn-sm" type="button" onclick="window.location='myblog.html'">목록보기</button>
+                                                <button class="btn btn-default btn-sm" type="button" onclick="window.location='myblog_reply.html'">답글</button>
+                                                <button class="btn btn-default btn-sm" type="button" onclick="window.location='myblog_modify.html'">수정</button>
+                                                <button class="btn btn-default btn-sm" type="button">삭제</button>
+                                            </div>
+                                        </div>
+                                        <div class="commentwrite col-md-12 row">
+                                        <h2 class="bold">Comments</h2>
+                                            <form>
+                                                <textarea class="margin-bottom-20" type="text"></textarea>
+                                                <button type="submit">등록</button>
+                                            </form>
+                                        </div>
+                                        <div class="response-area col-md-12 row">
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <div class="post-comment">
+                                                        <div class="media-body">
+                                                            <span><i class="fa fa-user"></i>관리자[Master]</span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                                            <ul class="nav navbar-nav post-nav">
+                                                                <li><i class="fa fa-clock-o"></i> 2014.04.06</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <button class="btn btn-default btn-xs" type="button">수정</button>
+                                                            <button class="btn btn-default btn-xs" type="button">삭제</button>
+                                                        </div>
+                                                    </div>                                                   
+                                                </li>
+                                                <li class="media">
+                                                    <div class="post-comment">
+                                                        <div class="media-body">
+                                                            <span><i class="fa fa-user"></i>관리자[Master]</span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                                            <ul class="nav navbar-nav post-nav">
+                                                                <li><i class="fa fa-clock-o"></i> 2014.04.06</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <button class="btn btn-default btn-xs" type="button">수정</button>
+                                                            <button class="btn btn-default btn-xs" type="button">삭제</button>
+                                                        </div>
+                                                    </div>                                                   
+                                                </li>
+                                            </ul>                   
                                         </div>
 
                                     </div>

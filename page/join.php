@@ -5,9 +5,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Todo Blog</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -94,37 +94,46 @@
         <div class="container">
             <div class="row">
                 <div class="main-content">
-                    <h1 class="antitle">로그인</h1>
+                    <h1 class="antitle">회원가입</h1>
 
                     <!-- content inner -->
                     <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
-                        <form class="login-page">
-                            <div class="login-header margin-bottom-30">
-                                <h2>Login to your account</h2>
-                            </div>
-                            <div class="input-group margin-bottom-20">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-user"></i>
-                                </span>
-                                <input placeholder="아이디" class="form-control" type="text">
-                            </div>
-                            <div class="input-group margin-bottom-20">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-lock"></i>
-                                </span>
-                                <input placeholder="비밀번호" class="form-control" type="password">
-                            </div>
+                        <form class="signup-page">
+                            <div class="signup-header">
+                                <h2>Register a new account</h2>
+                            <label>아이디
+                                <span class="color-red">*</span>
+                            </label>
+                            <input class="form-control margin-bottom-20" type="text">
+                            <label>비밀번호
+                                <span class="color-red">*</span>
+                            </label>
+                            <input class="form-control margin-bottom-20" type="text">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <button class="btn btn-primary pull-right" type="submit">로그인</button>
+                                <div class="col-sm-6">
+                                    <label>이름
+                                        <span class="color-red">*</span>
+                                    </label>
+                                    <input class="form-control margin-bottom-20" type="password">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>닉네임
+                                        <span class="color-red">*</span>
+                                    </label>
+                                    <input class="form-control margin-bottom-20" type="password">
                                 </div>
                             </div>
                             <hr>
-                            <h4>Forget your Password ?</h4>
-                            <p>
-                                <a href="#">Click here</a>to reset your password.
-                            </p>
-                        </form>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <p>Already a member? <br> Click 
+                                        <a href="login.html">HERE</a>to login to your account.</p>
+                                </div>
+                                <div class="col-lg-4 text-right">
+                                    <button class="btn btn-primary" type="submit">회원가입</button>
+                                </div>
+                            </div>
+                        </form>  
                     </div>
                     <!-- content inner -->
 

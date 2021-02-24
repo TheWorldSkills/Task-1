@@ -5,9 +5,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Todo Blog</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="myblog.html" title="내 블로그" target="_blank">
+                            <a href="myblog.html" title="내 블로그">
                                 내 블로그
                             </a>
                         </li>
@@ -94,44 +94,37 @@
         <div class="container">
             <div class="row">
                 <div class="main-content">
-                    <h1 class="antitle">Top Bloger</h1>
+                    <h1 class="antitle">로그인</h1>
 
                     <!-- content inner -->
-                    <div class="col-md-4"> 
-                        <div class="anonymous">
-                            <img src="images/anonymous.png" title="anonymous" width="90%">
-                            <h3>
-                                JHON DOE
-                            </h3>
-                            <span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">  
-                         <div class="anonymous">
-                            <img src="images/anonymous.png" title="anonymous" width="90%">
-                            <h3>
-                                NIKOLAI
-                            </h3>
-                            <span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">  
-                        <div class="anonymous">
-                            <img src="images/anonymous.png" title="anonymous" width="90%">
-                            <h3>
-                                BRAD PITT
-                            </h3>
-                            <span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </span>
-                        </div>
+                    <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+                        <form class="login-page">
+                            <div class="login-header margin-bottom-30">
+                                <h2>Login to your account</h2>
+                            </div>
+                            <div class="input-group margin-bottom-20">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <input placeholder="아이디" class="form-control" type="text">
+                            </div>
+                            <div class="input-group margin-bottom-20">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                                <input placeholder="비밀번호" class="form-control" type="password">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary pull-right" type="submit">로그인</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Forget your Password ?</h4>
+                            <p>
+                                <a href="#">Click here</a>to reset your password.
+                            </p>
+                        </form>
                     </div>
                     <!-- content inner -->
 
